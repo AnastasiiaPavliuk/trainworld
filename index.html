@@ -1,13 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Dela+Gothic+One&display=swap"
+    rel="stylesheet">
+  <title>Vite App</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="navbar">
+      <div class="nav__logo__flex">
+        <img class="img_logo" src="./assets/train_world_logo.png" alt="train world logo">
+        <img class="img_logo" src="./assets/sncb_logo.png" alt="sncb logo">
+      </div>
+      <div class="button__primary">
+        <a href="#">Visit a Museum &#9658;</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="intro">
+    <h1 class="text text--storypart">Full-Speed Ahead</h1>
+    <p class="text text--bodycopy">Did you know that <span class="span--underlined">Belgium</span> in seconds <span
+        class="span--underlined"> became a №1 country </span> with complete High Speed Line network?</p>
+    <p class="text text--bodycopy">Read more to see how they did it and in what way they invested <span
+        class="span--underlined">€ 5 billion!</span></p>
+    <div class="scroll_hint">
+      <lottie-player src="https://lottie.host/5bc1fd0a-dfef-45f6-ae2c-c6b1f651a4e5/rfUQ5IYklk.json"
+        background="transparent" speed="1" style="width: 100px;" loop autoplay></lottie-player>
+      <p class="scroll_hint_text">Scroll to enjoy an immersive story</p>
+    </div>
+  </section>
+  <section class="paragraph_first">
+    <h1 class="text text--storypart">High-Speed Lines</h1>
+    <p class="text text--bodycopy">Picture this: In 1986, the French government took the bold step of committing to
+      build a high-speed line (HSL) from
+      Paris straight to the Channel Tunnel/Belgian border.The journey was just beginning, and users like you could
+      almost feel
+      the energy building.</p>
+    <h1>Train under the Water</h1>
+    <div class="channel_tunnel">
+       <!-- <picture class="tunnel_bg">
+        <img src="./assets/train_water.png" alt="train under the water">
+      </picture> -->
+
+      <div class="channel-tunnel__animation-cont">
+        <img src="./assets/tunnel/tunnel-bottom.png" alt="" class="channel-tunnel__img">
+        <!-- <div class="channel-tunnel__length"></div>
+        <div class="channel-tunnel__img-line">
+          <img src="./assets/tunnel/train.png" alt="" class="channel-tunnel__img">
+          <img src="./assets/tunnel/tunnel-top.png" alt="" class="channel-tunnel__img">
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <script type="module" src="/main.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
 </html>
