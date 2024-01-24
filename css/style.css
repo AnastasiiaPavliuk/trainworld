@@ -124,18 +124,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #F2A950;
+}
+
+.channel-tunnel__animation-cont{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background-color: #F2A950;
 }
 
 .channel-tunnel__bg {
   position: absolute;
   z-index: 0;
 }
-.channel-tunnel__animation-cont{
-  height: 30px;
-  width: 100px;
-  background-color: #F2A950;
-  z-index: 1;
-}
+
+/* .channel-tunnel__length img{
+  height: 40px;
+} */
 
 .channel-tunnel__img-line {
   position: relative;
@@ -145,9 +151,24 @@ body {
 }
 
 .channel-tunnel__img {
-  /* Set a specific width to allow centering within .channel-tunnel__img-line */
-  width: 50%;
-  /* Adjust this value based on your design */
-  height: auto;
+  position: absolute;
+  height: 40px;
+  right: -100px;
 }
+
+.channel-tunnel__img-line .channel-tunnel__img:nth-child(2) {
+  right: 20px;
+  height: 30px;
+}
+
+.channel-tunnel__img-line .channel-tunnel__img:nth-child(3) {
+  right: -250px;
+}
+.channel-tunnel__img-line .channel-tunnel__img:nth-child(4) {
+  top: -50px;
+  right: 30px;
+  height: 20px;
+}
+
+
 
