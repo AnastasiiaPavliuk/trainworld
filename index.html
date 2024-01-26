@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -31,6 +31,18 @@
   </nav>
 
   <section class="intro">
+    <div class="intro__img brussels">
+      <img src="./assets/header/brussels.svg" alt=" brussels">
+    </div>
+    <div class="intro__img amst">
+      <img src="./assets/header/amst.svg" alt=" amst">
+    </div>
+    <div class="intro__img cologne">
+      <img src="./assets/header/cologne.svg" alt=" cologne">
+    </div>
+    <div class="intro__img paris">
+      <img src="./assets/header/paris.svg" alt="paris">
+    </div>
     <h1 class="text text--chapter">Full-Speed Ahead</h1>
     <p class="text text--bodycopy">Did you know that <span class="span--underlined">Belgium</span> in seconds <span
         class="span--underlined"> became a №1 country </span> with complete High Speed Line network?</p>
@@ -55,15 +67,37 @@
 
     <div class="channel_tunnel">
       <picture class="tunnel_bg">
+        <source media="(min-width:768px)" srcset="./assets/train_water.avif" type="image/avif">
+        <source media="(min-width:768px)" srcset="./assets/train_water.webp" type="image/webp">
+
+        <source srcset="./assets/channel-water-mobile-min.avif" type="image/avif">
+        <source srcset="./assets/channel-water-mobile-min.webp" type="image/webp">
+
         <img src="./assets/channel-water-mobile.png" alt="train under the water">
       </picture>
       <div class="channel-tunnel__animation-cont">
         <div class="channel-tunnel__img-line">
-          <img src="./assets/tunnel/bottom.png" alt="" class="channel-tunnel__img">
-          <img src="./assets/tunnel/train.png" alt="" class="channel-tunnel__img">
-          <img src="./assets/tunnel/top.png" alt="" class="channel-tunnel__img">
-          <img src="./assets/tunnel/tunnel-length.png" alt="" class="channel-tunnel__img">
+          <picture class="channel-tunnel__img">
+            <source media="(min-width:768px)" srcset="./assets/tunnel/bottom-large.png">
+            <img src="./assets/tunnel/bottom.png" alt="">
+          </picture>
+
+          <picture class="channel-tunnel__img">
+          <!--   <source media="(min-width:768px)" srcset="./assets/tunnel/train-large.png"> -->
+            <img src="./assets/tunnel/train.png" alt="">
+          </picture>
+
+          <picture class="channel-tunnel__img">
+            <source media="(min-width:768px)" srcset="./assets/tunnel/top-large.png">
+            <img src="./assets/tunnel/top.png" alt="">
+          </picture>
+
+          <picture class="channel-tunnel__img">
+            <source media="(min-width:768px)" srcset="./assets/tunnel/tunnel-length-large.png">
+            <img src="./assets/tunnel/tunnel-length.png" alt="">
+          </picture>
         </div>
+
       </div>
       <p class="text text--bulky tunnel-description">In 1990 construction of the fifty-kilometre-long railway tunnel
         beneath the Channel was already in full swing.</p>
@@ -111,16 +145,20 @@
       <p class="text text--bodycopy_regular">But the works had to begin at the same time in both the <span
           class="span--underlined">North and the
           South.</span> </p>
-      <!-- <lottie-player src="https://lottie.host/6a576550-adfa-4916-9ff9-99c06f114a9d/iBQ0KQzt1v.json"
-        background="transparent" speed="1" style="height: 400px;" loop autoplay></lottie-player> -->
+      <div>
+        <lottie-player src="https://lottie.host/19a66bb7-9f36-4f48-88f5-4c0632a90e45/927uwMHdyP.json"
+          background="transparent" speed="1" style="height: 400px;" loop autoplay></lottie-player>
+      </div>
       <p class="text text--bodycopy_regular">This simultaneous construction was part of Wallonia's intention to make
         sure the HSL between Leuven and Liège would not be put on the back burner.</p>
       <h2 class="text--bulky"> The progress of High- Speed rail</h2>
       <div class="speed__rail__cont">
         <p class=" text--bulky year"> 1998</p>
-        <!-- <dotlottie-player src="https://lottie.host/1094acb5-099e-4aeb-bd31-a86f58476177/4nZZAHiMnH.json"
-  background="transparent" speed="1" style="width: 400px; height: 400px" direction="1" playMode="normal" loop controls
-  autoplay></dotlottie-player> -->
+        <div>
+          <lottie-player src="https://lottie.host/4d53c0b2-1ac3-47d2-bfad-fc26835c1e49/0AfvG2Gt89.json"
+            background="transparent" speed="1" style="height: 400px;" direction="1" playMode="normal" loop controls
+            autoplay></lottie-player>
+        </div>
       </div>
     </div>
 
@@ -147,8 +185,9 @@
         and on the Brussels-Midi, Antwerpen-Centraal and Liège-Guillemins stations.</p>
       <p class="text text--bodycopy"> On the Brussels - Paris route, the Thalys left air transport in the dust</p>
       <p class="text text--bodycopy_regular">The Eurostar connects Brussels to London in 2 hours.</p>
+
       <div class="hard__to__believe">
-        <p class="text text--bulky">Hard to believe? Check by yourself!</p>
+        <p class="text--bulky">Hard to believe? Check by yourself!</p>
         <div class="destination">
           <div class="destination__part">
             <p>Your destination</p>
@@ -158,16 +197,17 @@
               <p>Brussels</p>
             </div>
           </div>
+
           <div class="transport__part">
             <p>Choose your transport</p>
             <div class="transport__flex">
-              <div class="icon--active">
+              <div class=" icon icon--active">
                 <img src="./assets/icon-plane.png" alt="plane">
               </div>
-              <div class="icon--default">
+              <div class="icon icon--default">
                 <img src="./assets/icon-train.png" alt="train">
               </div>
-              <div class="icon--default">
+              <div class="icon icon--default">
                 <img src="./assets/icon-car.png" alt="car">
               </div>
             </div>
@@ -177,7 +217,6 @@
     </div>
 
   </section>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script type="module" src="/main.js"></script>
