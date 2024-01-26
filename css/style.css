@@ -54,12 +54,7 @@ body {
   line-height: 150%;
   margin-left: 16px;
 }
-/* 
-@media (min-width:768px) {
-  .intro .text--bodycopy{
-    max-width: 600px;
-  }
-} */
+
 
 .text--bulky {
   /* text-align: center; */
@@ -197,14 +192,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F2A950;
+  /* background-color: #F2A950; */
 }
 
 .channel-tunnel__animation-cont {
   position: absolute;
   height: 100px;
   width: 100%;
-  background-color: #F2A950;
+  /* background-color: #F2A950; */
 }
 
 .channel-tunnel__bg {
@@ -226,31 +221,48 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 
 .channel-tunnel__img {
   position: absolute;
-  /* width: 100%; */
-  height: 35px;
+  width: fit-content;
   right: 0px;
 }
-
+/* 
 .channel-tunnel__img-line .channel-tunnel__img:nth-child(2) {
   height: 30px;
-}
+} */
 
-.channel-tunnel__img-line .channel-tunnel__img:nth-child(4) {
+ .channel-tunnel__img-line .channel-tunnel__img:nth-child(4) {
   top: -50px;
-  height: 30px;
-  right: 10px;
-}
+  right: 5%;
+ 
+} 
 
+
+@media (min-width:768px) {
+  /* .intro .text--bodycopy{
+    max-width: 600px;
+  } */
+
+  .text--bodycopy ,
+  .text--bodycopy_regular,
+  .intro .text--bodycopy
+  {
+    max-width: 600px;
+  }
+     .channel-tunnel__img-line .channel-tunnel__img:nth-child(4) {
+       top: -100px;
+     }
+  
+}
 
 
 .tunnel-description {
   color: var(--bg-color);
   position: absolute;
-  bottom: 100px;
+  bottom: 5%;
 }
 
 .margin__container--text {
@@ -259,7 +271,8 @@ body {
 
 .lets__guess__cont {
   background-color: #F8E9D2;
-  width: clamp(95%, 90%, 600px);
+  width: 90%;
+  max-width: 600px;
   border-radius: 1rem;
   margin: auto;
   display: flex;
@@ -298,6 +311,10 @@ input[type="radio"] {
   margin-top: -1.5rem;
   font-size: 36px;
   color: var(--orange);
+}
+
+.leuven__liege_cont{
+  margin-top: 2rem;
 }
 
 .speed__rail__cont .year {
