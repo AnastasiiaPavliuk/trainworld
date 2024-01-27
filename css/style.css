@@ -308,6 +308,8 @@ input[type="radio"] {
   color: #8a2e2e;
 }
 
+
+
 .statistics__flex {
   display: flex;
   flex-direction: column;
@@ -433,4 +435,28 @@ input[type="radio"] {
 
 .icon--default img {
   height: 35px;
+}
+
+.interactive__map {
+--lottie-player-toolbar-icon-color: var(--bg-color);
+--lottie-player-toolbar-icon-hover-color:var(--bg-color);
+--lottie-player-toolbar-icon-active-color: var(--bg-color);
+}
+
+.interactive__map button,
+.interactive__map button svg {
+  display: none;
+  color: #F21F0C;
+}
+
+.toolbar button.active {
+  fill: #0AAFF2;
+}
+
+.toolbar button {
+  border: orange 2px solid !important;
+}
+
+#lottie-stop-button svg {
+  display: none;
 }
