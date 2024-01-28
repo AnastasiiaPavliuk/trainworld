@@ -506,9 +506,17 @@ input[type="radio"] {
 
 
 .timeline{
-  
   width: 100%;
+  margin-bottom: 1rem;
 }
+
+.line_img{
+ display: none;
+}
+/* 
+.line_img img{
+  height: 100%;
+} */
 
 .timeline__grid{
   background-color: #EEF5F7;
@@ -517,8 +525,8 @@ input[type="radio"] {
   grid-template-columns: 15% 1fr;
   grid-template-rows: repeat(3, auto);
   gap: 2rem 1rem;
-  margin: 1rem;
-  padding: 2rem 1rem ;
+  /* margin: 1rem; */
+  padding: 2rem 1rem;
   max-width: 400px;
 }
 
@@ -576,7 +584,21 @@ input[type="radio"] {
   .timeline__grid{
     gap:  1.2rem 4rem;
   }
+.timeline {
+  position: relative;
+}
 
+.line_img {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  height: 100%;
+  display: block;
+}
+
+.line_img img {
+  height: 100%;
+}
     .new_face_box {
       /* background-color: #ecf53e; */
       display: grid;
