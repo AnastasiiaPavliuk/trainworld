@@ -552,6 +552,62 @@ input[type="radio"] {
 
 }
 
+.train_model_section{
+  background-color: #F8E9D2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  aspect-ratio: 5/2;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.train_model_animation{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* background-color: blueviolet; */
+}
+
+.train_model_train , 
+.train_model_note{
+  position: absolute;
+}
+
+.train_model_train{
+  /* max-width: 85%; */
+  width: 80%;
+  right: 0;
+  bottom: 10%
+}
+
+.train_model_note{
+  max-height: 50%;
+}
+
+.note-1{
+  right: 45%;
+  bottom: 30%;
+}
+.note-2{
+  right: 40%;
+  bottom: 15%;
+}
+.note-3{
+  right: 5%;
+  bottom: 15%;
+}
+
+.note-1-m7{
+  right: 45%;
+  bottom: 42%;
+}
+.note-2-m7{
+  right: 12%;
+  bottom: 37%;
+}
+
+
 @media (min-width:768px) {
   /* .intro .text--bodycopy{
     max-width: 600px;
