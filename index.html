@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/png" href="./assets/train_world_logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -13,389 +13,391 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Dela+Gothic+One&display=swap"
     rel="stylesheet">
-  <title>Vite App</title>
+  <title>Train World - Full Speed Ahead</title>
 </head>
 
 <body>
 
-  <nav>
-    <div class="navbar">
-      <div class="nav__logo__flex">
-        <img class="img_logo" src="./assets/train_world_logo.png" alt="train world logo">
-        <img class="img_logo" src="./assets/sncb_logo.png" alt="sncb logo">
-      </div>
-      <div class="button__primary">
-        <a href="#">Visit a Museum &#9658;</a>
-      </div>
-    </div>
-  </nav>
+  <div class="site__wrapper">
 
-  <section class="intro">
-    <div class="intro__img brussels">
-      <img src="./assets/header/brussels.svg" alt=" brussels">
-    </div>
-    <div class="intro__img amst">
-      <img src="./assets/header/amst.svg" alt=" amst">
-    </div>
-    <div class="intro__img cologne">
-      <img src="./assets/header/cologne.svg" alt=" cologne">
-    </div>
-    <div class="intro__img paris">
-      <img src="./assets/header/paris.svg" alt="paris">
-    </div>
-    <h1 class="text text--chapter">Full-Speed Ahead</h1>
-    <p class="text text--bodycopy">Did you know that <span class="span--underlined">Belgium</span> in seconds <span
-        class="span--underlined"> became a №1 country </span> with complete High Speed Line network?</p>
-    <p class="text text--bodycopy">Read more to see how they did it and in what way they invested <span
-        class="span--underlined">€ 5 billion!</span></p>
-    <div class="scroll_hint">
-      <lottie-player src="https://lottie.host/5bc1fd0a-dfef-45f6-ae2c-c6b1f651a4e5/rfUQ5IYklk.json"
-        background="transparent" speed="1" style="width: 100px;" loop autoplay></lottie-player>
-      <p class="scroll_hint_text">Scroll to enjoy an immersive story</p>
-    </div>
-  </section>
-
-  <section class="paragraph_first">
-    <h1 class="text text--chapter">High-Speed Lines</h1>
-    <p class="text text--bodycopy_regular">Picture this: In 1986, the French government took the bold step of committing
-      to
-      build a high-speed line (HSL) from
-      Paris straight to the Channel Tunnel/Belgian border.The journey was just beginning, and users like you could
-      almost feel
-      the energy building.</p>
-    <h1 class=" text text--bulky">Train under the Water</h1>
-
-    <div class="channel_tunnel">
-      <picture class="tunnel_bg">
-        <source media="(min-width:768px)" srcset="./assets/train_water.avif" type="image/avif">
-        <source media="(min-width:768px)" srcset="./assets/train_water.webp" type="image/webp">
-
-        <source srcset="./assets/channel-water-mobile-min.avif" type="image/avif">
-        <source srcset="./assets/channel-water-mobile-min.webp" type="image/webp">
-
-        <img  src="./assets/channel-water-mobile.png" alt="train under the water">
-      </picture>
-      <div class="channel-tunnel__animation-cont">
-        <div class="channel-tunnel__img-line">
-          <picture class="channel-tunnel__img">
-            <source media="(min-width:768px)" srcset="./assets/tunnel/bottom-large.png">
-            <img src="./assets/tunnel/bottom.png" alt="">
-          </picture>
-
-          <picture class="channel-tunnel__img">
-            <source media="(min-width:768px)" srcset="./assets/tunnel/train-large.png">
-            <img class="train" src="./assets/tunnel/train.png" alt="">
-          </picture>
-
-          <picture class="channel-tunnel__img">
-            <source media="(min-width:768px)" srcset="./assets/tunnel/top-large.png">
-            <img src="./assets/tunnel/top.png" alt="">
-          </picture>
-
-          <picture class="channel-tunnel__img">
-            <source media="(min-width:768px)" srcset="./assets/tunnel/tunnel-length-large.png">
-            <img src="./assets/tunnel/tunnel-length.png" alt="">
-          </picture>
+    <nav>
+      <div class="navbar">
+        <div class="nav__logo__flex">
+          <img class="img_logo" src="./assets/train_world_logo.png" alt="train world logo">
+          <img class="img_logo" src="./assets/sncb_logo.png" alt="sncb logo">
         </div>
-      </div>
-      <p class="text text--bulky tunnel-description">In 1990 construction of the fifty-kilometre-long railway tunnel
-        beneath the Channel was already in full swing.</p>
-    </div>
-
-    <div class="margin__container--text">
-      <p class="text text--bulky">Question of full-speed trains in Belgium was controversial</p>
-    </div>
-
-    <div class="lets__guess__cont">
-      <h2 class="text text--bulky">Let&rsquo;s guess!</h2>
-      <p class="text text--bodycopy"> Why do you think Belgium goverment didn’t want to build the high speed lines?</p>
-
-      <div class="radio-container">
-        <label>
-          <input type="radio" name="radio" checked />
-          <span>Harmful to the environment</span>
-        </label>
-        <label>
-          <input type="radio" name="radio" />
-          <span>Totally unnecessary</span>
-        </label>
-        <label>
-          <input type="radio" name="radio" />
-          <span>Elitist</span>
-        </label>
-        <label>
-          <input type="radio" name="radio" />
-          <span>“Paying through the nose”</span>
-        </label>
-        <label>
-          <input type="radio" name="radio" />
-          <span>All of mentioned above</span>
-        </label>
-      </div>
-
-      <input class="button__secondary" type="submit" value="Submit">
-    </div>
-
-    <div class="leuven__liege_cont">
-      <div class="leuven_flex_desktop">
-        <div>
-          <p class="text text--bodycopy">Yet again, <span class="span--underlined">a compromise was reached.</span></p>
-          <p class="text text--bodycopy_regular">In Flanders, with the exception of the Antwerp - Dutch border section,
-            no
-            high-speed train lines would be constructed.
-            However, lines would be adapted in a manner that benefited both the domestic and high-speed trains.</p>
-          <p class="text text--bodycopy_regular">But the works had to begin at the same time in both the <span
-              class="span--underlined">North and the
-              South.</span> </p>
-          <p class="text text--bodycopy_regular">This simultaneous construction was part of Wallonia's intention to make
-            sure the HSL between Leuven and Liège would not be put on the back burner.</p>
-        </div>
-        <div>
-          <lottie-player src="https://lottie.host/19a66bb7-9f36-4f48-88f5-4c0632a90e45/927uwMHdyP.json"
-            background="transparent" speed="0.7"  loop autoplay></lottie-player>
-        </div>
-      </div>
-      <h2 class="text text--bulky"> The progress of High- Speed rail</h2>
-      <div class="speed__rail__cont">
-        <!-- <p class=" text--bulky year"> 1998</p> -->
-        <div class="interactive__map__cont">
-          <lottie-player id="lottieMap" class="interactive__map"
-            src="https://lottie.host/20f2942b-39d7-444f-8348-473be43a1fc9/C05N9Kz2DO.json" background="transparent"
-             ></lottie-player>
-        </div>
-        <div class="animation__hint">
-          <div>
-            <lottie-player src="https://lottie.host/8a243e03-a1c8-4905-8873-3dc21bab9c5b/aUlKbyxCOo.json"
-              background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
-          </div>
-          <p class="text text--bodycopy_regular scroll_hint_text">Tap and hold to play</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="statistics__flex">
-      <div class="statistics__cont">
-        <p class="number">№1</p>
-        <p class="text--bodycopy_regular description">In 16 years, Belgium had become the first country in Europe to
-          achieve a complete HSL network</p>
-      </div>
-      <div class="statistics__cont">
-        <p class="number">300 km/h</p>
-        <p class="text--bodycopy_regular description">HSL network suitable for speeds of 300 kilometres per hour.</p>
-      </div>
-      <div class="statistics__cont">
-        <p class="number">€ 5 billion</p>
-        <p class="text--bodycopy_regular description">The investment ran to well over five billion euros - the highest
-          since the World Expo in 1958.</p>
-      </div>
-    </div>
-
-    <div class="paris__brussels_cont">
-      <p class="text text--bodycopy_regular">The money was spent not only on high-speed lines, but also on the 3.8
-        km-long underground North-South link in Antwerp
-        and on the Brussels-Midi, Antwerpen-Centraal and Liège-Guillemins stations.</p>
-      <p class="text text--bodycopy"> On the Brussels - Paris route, the Thalys left air transport in the dust</p>
-      <p class="text text--bodycopy_regular">The Eurostar connects Brussels to London in 2 hours.</p>
-
-      <div class="hard__to__believe">
-        <p class="text--bulky">Hard to believe? Check by yourself!</p>
-        <div class="destination">
-          <div class="destination__part">
-            <p>Your destination</p>
-            <div class="destination__flex">
-              <p>Paris</p>
-              <img src="./assets/icon-arrow.png" alt="arrow">
-              <p>Brussels</p>
-            </div>
-          </div>
-
-          <div class="transport__part">
-            <p>Choose your transport</p>
-            <div class="transport__flex">
-              <div class=" icon icon--active">
-                <img src="./assets/icon-plane.png" alt="plane">
-              </div>
-              <div class="icon icon--default">
-                <img src="./assets/icon-train.png" alt="train">
-              </div>
-              <div class="icon icon--default">
-                <img src="./assets/icon-car.png" alt="car">
-              </div>
-            </div>
-          </div>
-
-          <div class="results__cont">
-            <div class="results__duration">
-              <p>Duration</p>
-              <div class="results results__duration__flex">
-                <img src="./assets/icon-clock.png" alt="">
-                <p class="check__results">2h 30m</p>
-              </div>
-            </div>
-
-            <div class="  results__price">
-              <p>Price</p>
-              <div class="results results__duration__flex">
-                <img src="./assets/icon-price.png" alt="">
-                <p class="check__results">€ 50 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="cta__cont">
-        <p class="text--bulky">Have you ever wondered what does train driver see when he is riding?</p>
-        <p>Visit a train world find find out!</p>
         <div class="button__primary">
-          Go to museum
+          <a href="#">Visit a Museum &#9658;</a>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <div class="text_in_picture">
-      <picture>
-        <source media="(min-width:768px)" srcset="./assets/train_bg_big.avif" type="image/avif">
-        <source media="(min-width:768px)" srcset="./assets/train_bg_big.webp" type="image/webp">
+    <section class="intro">
+      <div class="intro__img brussels">
+        <img src="./assets/header/brussels.svg" alt=" brussels">
+      </div>
+      <div class="intro__img amst">
+        <img src="./assets/header/amst.svg" alt=" amst">
+      </div>
+      <div class="intro__img cologne">
+        <img src="./assets/header/cologne.svg" alt=" cologne">
+      </div>
+      <div class="intro__img paris">
+        <img src="./assets/header/paris.svg" alt="paris">
+      </div>
+      <h1 class="text text--chapter">Full-Speed Ahead</h1>
+      <p class="text text--bodycopy">Did you know that <span class="span--underlined">Belgium</span> in seconds <span
+          class="span--underlined"> became a №1 country </span> with complete High Speed Line network?</p>
+      <p class="text text--bodycopy">Read more to see how they did it and in what way they invested <span
+          class="span--underlined">€ 5 billion!</span></p>
+      <div class="scroll_hint">
+        <lottie-player src="https://lottie.host/5bc1fd0a-dfef-45f6-ae2c-c6b1f651a4e5/rfUQ5IYklk.json"
+          background="transparent" speed="1" style="width: 100px;" loop autoplay></lottie-player>
+        <p class="scroll_hint_text">Scroll to enjoy an immersive story</p>
+      </div>
+    </section>
 
-        <source srcset="./assets/train_bg.avif" type="image/avif">
-        <source srcset="./assets/train_bg.webp" type="image/webp">
+    <section class="paragraph_first">
+      <h1 class="text text--chapter">High-Speed Lines</h1>
+      <p class="text text--bodycopy_regular">Picture this: In 1986, the French government took the bold step of committing
+        to
+        build a high-speed line (HSL) from
+        Paris straight to the Channel Tunnel/Belgian border.The journey was just beginning, and users like you could
+        almost feel
+        the energy building.</p>
+      <h1 class=" text text--bulky">Train under the Water</h1>
 
-        <img class="satellite__bg" src="./assets/train_bg.png" alt="train under the water">
-      </picture>
+      <div class="channel_tunnel">
+        <picture class="tunnel_bg">
+          <source media="(min-width:768px)" srcset="./assets/train_water.avif" type="image/avif">
+          <source media="(min-width:768px)" srcset="./assets/train_water.webp" type="image/webp">
+
+          <source srcset="./assets/channel-water-mobile-min.avif" type="image/avif">
+          <source srcset="./assets/channel-water-mobile-min.webp" type="image/webp">
+
+          <img  src="./assets/channel-water-mobile.png" alt="train under the water">
+        </picture>
+        <div class="channel-tunnel__animation-cont">
+          <div class="channel-tunnel__img-line">
+            <picture class="channel-tunnel__img">
+              <source media="(min-width:768px)" srcset="./assets/tunnel/bottom-large.png">
+              <img src="./assets/tunnel/bottom.png" alt="">
+            </picture>
+
+            <picture class="channel-tunnel__img">
+              <source media="(min-width:768px)" srcset="./assets/tunnel/train-large.png">
+              <img class="train" src="./assets/tunnel/train.png" alt="">
+            </picture>
+
+            <picture class="channel-tunnel__img">
+              <source media="(min-width:768px)" srcset="./assets/tunnel/top-large.png">
+              <img src="./assets/tunnel/top.png" alt="">
+            </picture>
+
+            <picture class="channel-tunnel__img">
+              <source media="(min-width:768px)" srcset="./assets/tunnel/tunnel-length-large.png">
+              <img src="./assets/tunnel/tunnel-length.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <p class="text text--bulky tunnel-description">In 1990 construction of the fifty-kilometre-long railway tunnel
+          beneath the Channel was already in full swing.</p>
+      </div>
+
       <div class="margin__container--text">
-        <p class="text text--bulky text_on_satellite_picture">The high-speed train that departs and arrives in the heart
-          of the city, turned out to be a <span class="span_blue">masterstroke</span>.</p>
+        <p class="text text--bulky">Question of full-speed trains in Belgium was controversial</p>
       </div>
-    </div>
 
-    <p class="text text--bodycopy">Domestic railways also saw their customer base rising steadily since 1995, thanks to
-      the expansion of services and the
-      investments in infrastructure and comfortable double-decker trains.</p>
-  </section>
+      <div class="lets__guess__cont">
+        <h2 class="text text--bulky">Let&rsquo;s guess!</h2>
+        <p class="text text--bodycopy"> Why do you think Belgium goverment didn’t want to build the high speed lines?</p>
 
+        <div class="radio-container">
+          <label>
+            <input type="radio" name="radio" />
+            <span>Harmful to the environment</span>
+          </label>
+          <label>
+            <input type="radio" name="radio" />
+            <span>Totally unnecessary</span>
+          </label>
+          <label>
+            <input type="radio" name="radio" />
+            <span>Elitist</span>
+          </label>
+          <label>
+            <input type="radio" name="radio" />
+            <span>“Paying through the nose”</span>
+          </label>
+          <label>
+            <input type="radio" name="radio" />
+            <span>All of mentioned above</span>
+          </label>
+        </div>
 
-  <section class="new_face">
-    <h2 class="text text--chapter">The new face of the Belgian railways</h2>
-
-    <div class="new_face_box">
-      <div class="paragraph_start">
-        <h2 class="text text--bulky"> NMBS/SNCB Split</h2>
-        <p class=" text text--bodycopy_regular">To remain in line with European regulations, the NMBS/SNCB split into 3
-          companies on January 1, 2005.</p>
+        <input class="button__secondary form__button" type="submit" value="Submit">
       </div>
-      <div class="timeline">
-        <div class="timeline__grid">
-          <div class="sncb__img"><img src="./assets/sncb-holding.png" alt=""></div>
-          <div class="sncb__description">
-            <p class="sncb_name">SNCB-Holding</p>
-            <p class="sncb_role">Coordinator</p>
+
+      <div class="leuven__liege_cont">
+        <div class="leuven_flex_desktop">
+          <div>
+            <p class="text text--bodycopy">Yet again, <span class="span--underlined">a compromise was reached.</span></p>
+            <p class="text text--bodycopy_regular">In Flanders, with the exception of the Antwerp - Dutch border section,
+              no
+              high-speed train lines would be constructed.
+              However, lines would be adapted in a manner that benefited both the domestic and high-speed trains.</p>
+            <p class="text text--bodycopy_regular">But the works had to begin at the same time in both the <span
+                class="span--underlined">North and the
+                South.</span> </p>
+            <p class="text text--bodycopy_regular">This simultaneous construction was part of Wallonia's intention to make
+              sure the HSL between Leuven and Liège would not be put on the back burner.</p>
           </div>
-          <div class="sncb__img"><img src="./assets/sncb.png" alt=""></div>
-          <div class="sncb__description">
-            <p class="sncb_name">SNCB</p>
-            <p class="sncb_role">Railway operator</p>
-            <ul class="sncb_task_list">
-              <li class="sncb_task_item"> Manages and modernises the Belgian railway</li>
-              <li class="sncb_task_item"> Maintains the rolling stock</li>
-              <li class="sncb_task_item"> Manages all the stations and stops</li>
-            </ul>
-          </div>
-          <div class="sncb__img"><img src="./assets/infrabel.png" alt=""></div>
-          <div class="sncb__description">
-            <p class="sncb_name">Infrabel</p>
-            <p class="sncb_role">infrastructure manager</p>
-            <ul class="sncb_task_list">
-              <li class="sncb_task_item"> Operates the passenger trains</li>
-              <li class="sncb_task_item"> Infrastructure and controls the train traffic safety</li>
-            </ul>
+          <div>
+            <lottie-player src="https://lottie.host/19a66bb7-9f36-4f48-88f5-4c0632a90e45/927uwMHdyP.json"
+              background="transparent" speed="0.7"  loop autoplay></lottie-player>
           </div>
         </div>
-        <div class="line_img">
-          <img src="./assets/timeline-line.png" alt="">
+        <h2 class="text text--bulky"> The progress of High- Speed rail</h2>
+        <div class="speed__rail__cont">
+          <!-- <p class=" text--bulky year"> 1998</p> -->
+          <div class="interactive__map__cont">
+            <lottie-player id="lottieMap" class="interactive__map"
+              src="https://lottie.host/20f2942b-39d7-444f-8348-473be43a1fc9/C05N9Kz2DO.json" background="transparent"
+              loop autoplay controls></lottie-player>
+          </div>
+          <div class="animation__hint">
+            <div>
+              <lottie-player src="https://lottie.host/8a243e03-a1c8-4905-8873-3dc21bab9c5b/aUlKbyxCOo.json"
+                background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+            </div>
+            <p class="text text--bodycopy_regular scroll_hint_text">Tap and hold to play</p>
+          </div>
         </div>
       </div>
-      <div class="paragraph_end">
-        <p class="text text--bodycopy_regular">In 2014,NMBS/SNCB and Infrabel became two independent companies, with the
-          responsibilities of SNCB-Holding shared out
-          between both.</p>
+
+      <div class="statistics__flex">
+        <div class="statistics__cont">
+          <p class="number">№1</p>
+          <p class="text--bodycopy_regular description">In 16 years, Belgium had become the first country in Europe to
+            achieve a complete HSL network</p>
+        </div>
+        <div class="statistics__cont">
+          <p class="number">300 km/h</p>
+          <p class="text--bodycopy_regular description">HSL network suitable for speeds of 300 kilometres per hour.</p>
+        </div>
+        <div class="statistics__cont">
+          <p class="number">€ 5 billion</p>
+          <p class="text--bodycopy_regular description">The investment ran to well over five billion euros - the highest
+            since the World Expo in 1958.</p>
+        </div>
+      </div>
+
+      <div class="paris__brussels_cont">
+        <p class="text text--bodycopy_regular">The money was spent not only on high-speed lines, but also on the 3.8
+          km-long underground North-South link in Antwerp
+          and on the Brussels-Midi, Antwerpen-Centraal and Liège-Guillemins stations.</p>
+        <p class="text text--bodycopy"> On the Brussels - Paris route, the Thalys left air transport in the dust</p>
+        <p class="text text--bodycopy_regular">The Eurostar connects Brussels to London in 2 hours.</p>
+
+        <div class="hard__to__believe">
+          <p class="text--bulky">Hard to believe? Check by yourself!</p>
+          <div class="destination">
+            <div class="destination__part">
+              <p>Your destination</p>
+              <div class="destination__flex">
+                <p>Paris</p>
+                <img src="./assets/icon-arrow.png" alt="arrow">
+                <p>Brussels</p>
+              </div>
+            </div>
+
+            <div class="transport__part">
+              <p>Choose your transport</p>
+              <div class="transport__flex">
+                <div class=" icon icon--active">
+                  <img src="./assets/icon-plane.png" alt="plane">
+                </div>
+                <div class="icon icon--default">
+                  <img src="./assets/icon-train.png" alt="train">
+                </div>
+                <div class="icon icon--default">
+                  <img src="./assets/icon-car.png" alt="car">
+                </div>
+              </div>
+            </div>
+
+            <div class="results__cont">
+              <div class="results__duration">
+                <p>Duration</p>
+                <div class="results results__duration__flex">
+                  <img src="./assets/icon-clock.png" alt="">
+                  <p class="check__results">2h 30m</p>
+                </div>
+              </div>
+
+              <div class="  results__price">
+                <p>Price</p>
+                <div class="results results__duration__flex">
+                  <img src="./assets/icon-price.png" alt="">
+                  <p class="check__results">€ 50 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta__cont">
+          <p class="text--bulky">Have you ever wondered what does train driver see when he is riding?</p>
+          <p>Visit a train world find find out!</p>
+          <div class="button__primary">
+            Go to museum
+          </div>
+        </div>
+      </div>
+
+      <div class="text_in_picture">
+        <picture>
+          <source media="(min-width:768px)" srcset="./assets/train_bg_big.avif" type="image/avif">
+          <source media="(min-width:768px)" srcset="./assets/train_bg_big.webp" type="image/webp">
+
+          <source srcset="./assets/train_bg.avif" type="image/avif">
+          <source srcset="./assets/train_bg.webp" type="image/webp">
+
+          <img class="satellite__bg" src="./assets/train_bg.png" alt="train under the water">
+        </picture>
+        <div class="margin__container--text">
+          <p class="text text--bulky text_on_satellite_picture">The high-speed train that departs and arrives in the heart
+            of the city, turned out to be a <span class="span_blue">masterstroke</span>.</p>
+        </div>
+      </div>
+
+      <p class="text text--bodycopy">Domestic railways also saw their customer base rising steadily since 1995, thanks to
+        the expansion of services and the
+        investments in infrastructure and comfortable double-decker trains.</p>
+    </section>
+
+
+    <section class="new_face">
+      <h2 class="text text--chapter">The new face of the Belgian railways</h2>
+
+      <div class="new_face_box">
+        <div class="paragraph_start">
+          <h2 class="text text--bulky"> NMBS/SNCB Split</h2>
+          <p class=" text text--bodycopy_regular">To remain in line with European regulations, the NMBS/SNCB split into 3
+            companies on January 1, 2005.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline__grid">
+            <div class="sncb__img"><img src="./assets/sncb-holding.png" alt=""></div>
+            <div class="sncb__description">
+              <p class="sncb_name">SNCB-Holding</p>
+              <p class="sncb_role">Coordinator</p>
+            </div>
+            <div class="sncb__img"><img src="./assets/sncb.png" alt=""></div>
+            <div class="sncb__description">
+              <p class="sncb_name">SNCB</p>
+              <p class="sncb_role">Railway operator</p>
+              <ul class="sncb_task_list">
+                <li class="sncb_task_item"> Manages and modernises the Belgian railway</li>
+                <li class="sncb_task_item"> Maintains the rolling stock</li>
+                <li class="sncb_task_item"> Manages all the stations and stops</li>
+              </ul>
+            </div>
+            <div class="sncb__img"><img src="./assets/infrabel.png" alt=""></div>
+            <div class="sncb__description">
+              <p class="sncb_name">Infrabel</p>
+              <p class="sncb_role">infrastructure manager</p>
+              <ul class="sncb_task_list">
+                <li class="sncb_task_item"> Operates the passenger trains</li>
+                <li class="sncb_task_item"> Infrastructure and controls the train traffic safety</li>
+              </ul>
+            </div>
+          </div>
+          <div class="line_img">
+            <img src="./assets/timeline-line.png" alt="">
+          </div>
+        </div>
+        <div class="paragraph_end">
+          <p class="text text--bodycopy_regular">In 2014,NMBS/SNCB and Infrabel became two independent companies, with the
+            responsibilities of SNCB-Holding shared out
+            between both.</p>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section class="investment">
+      <h2 class="text text--chapter">Investment and modernisation</h2>
+      <p class="text text--bodycopy_regular">The NMBS/SNCB and Infrabel are actively investing in the 21st-century modernization
+        of the railway network. In 2011, the
+        introduction of 305 lightweight <span class="span--underlined">Desiro Main Line</span> electric units improved
+        local and regional passenger transport.</p>
+      <p class="text text--bodycopy_regular">Desiro Main Line was supremely good for suburb routes with many stops.</p>
+
+      <div class="train_model_section">
+        <h2 class="text text--bulky">Desiro main line</h2>
+        <div class="train_model_animation">
+          <img class="train_model_train  train-desiro" src="./assets/desiro-train/train-desktop.png" alt="">
+          <img class="train_model_note note-1 note-desiro " src="./assets/desiro-train/1st-note.png" alt="">
+          <img class="train_model_note note-2 note-desiro" src="./assets/desiro-train/2nd-note.png" alt="">
+          <img class="train_model_note note-3 note-desiro" src="./assets/desiro-train/3rd-note.png" alt="">
+        </div>
+      </div>
+
+      <p class="text text--bodycopy_regular">The Diabolo, the northern access to Zaventem, Brussels Airport was ready in 2012.</p>
+
+      <div class="sea__cont">
+        <p class="text text--bulky">Closer to the sea</p>
+        <p class="text text--bodycopy">Ongoing projects involve laying four tracks between Ghent and Bruges to stimulate
+          freight and improve passenger access
+          to the coastal region.</p>
+        <picture>
+          <source media="(min-width:768px)" srcset="./assets/sea-full.avif" type="image/avif">
+          <source media="(min-width:768px)" srcset="./assets/sea-full.webp" type="image/webp">
+
+          <source srcset="./assets/sea.avif" type="image/avif">
+          <source srcset="./assets/sea.webp" type="image/webp">
+
+          <img class="sea__img" src="./assets/sea.png" alt="train under the water">
+        </picture>
+      </div>
+
+      <p class=" text text--bulky">Brussels - Luxembourg line</p>
+      <p class="text text--bodycopy">Modernisation works on connection between 2 capitals improved rails system. In this
+        way trains can go up to <span class="span--underlined">160 km/h</span>.
+        Nowadays people can get from Brussels to Luxembourg in 3h 15m which is almost <span class="span--underlined">30
+          min faster</span> then it was in 2006.</p>
+      <p class="text text--bodycopy">The introduction of M7 carriages in 2020 marked a significant milestone</p>
+      <div class="train_model_section">
+        <h2 class="text text--bulky">M7 carriages</h2>
+        <div class="train_model_animation">
+          <img class="train_model_train train-m7" src="./assets/m7-train/train-desktop.png" alt="">
+          <img class="train_model_note note-1-m7 note-m7" src="./assets/m7-train/1st-note.png" alt="">
+          <img class="train_model_note note-2-m7 note-m7" src="./assets/m7-train/2nd-note.png" alt="">
+        </div>
+      </div>
+      <p class="text text--bodycopy">The design of M7 was recognized at the prestigious Henry van de Velde Awards,
+        incorporates insights from a comprehensive traveler survey and prioritizes modern safety systems.</p>
+    </section>
+
+    <div class="cta__cont">
+      <p class="text--bulky">Do you know that before the design and mechanisms of trains were totally different?</p>
+      <p>Visit a train world to see the real size trains from ancient time!</p>
+      <div class="button__primary">
+        Go to museum
       </div>
     </div>
-
-
-  </section>
-
-
-  <section class="investment">
-    <h2 class="text text--chapter">Investment and modernisation</h2>
-    <p class="text text--bodycopy_regular">The NMBS/SNCB and Infrabel are actively investing in the 21st-century modernization
-      of the railway network. In 2011, the
-      introduction of 305 lightweight <span class="span--underlined">Desiro Main Line</span> electric units improved
-      local and regional passenger transport.</p>
-    <p class="text text--bodycopy_regular">Desiro Main Line was supremely good for suburb routes with many stops.</p>
-
-    <div class="train_model_section">
-      <h2 class="text text--bulky">Desiro main line</h2>
-      <div class="train_model_animation">
-        <img class="train_model_train  train-desiro" src="./assets/desiro-train/train-desktop.png" alt="">
-        <img class="train_model_note note-1 note-desiro " src="./assets/desiro-train/1st-note.png" alt="">
-        <img class="train_model_note note-2 note-desiro" src="./assets/desiro-train/2nd-note.png" alt="">
-        <img class="train_model_note note-3 note-desiro" src="./assets/desiro-train/3rd-note.png" alt="">
+    <footer>
+      <div class="footer">
+        <p> &#169; 2024 Devine</p>
       </div>
-    </div>
-
-    <p class="text text--bodycopy_regular">The Diabolo, the northern access to Zaventem, Brussels Airport was ready in 2012.</p>
-
-    <div class="sea__cont">
-      <p class="text text--bulky">Closer to the sea</p>
-      <p class="text text--bodycopy">Ongoing projects involve laying four tracks between Ghent and Bruges to stimulate
-        freight and improve passenger access
-        to the coastal region.</p>
-      <picture>
-        <source media="(min-width:768px)" srcset="./assets/sea-full.avif" type="image/avif">
-        <source media="(min-width:768px)" srcset="./assets/sea-full.webp" type="image/webp">
-
-        <source srcset="./assets/sea.avif" type="image/avif">
-        <source srcset="./assets/sea.webp" type="image/webp">
-
-        <img class="sea__img" src="./assets/sea.png" alt="train under the water">
-      </picture>
-    </div>
-
-    <p class=" text text--bulky">Brussels - Luxembourg line</p>
-    <p class="text text--bodycopy">Modernisation works on connection between 2 capitals improved rails system. In this
-      way trains can go up to <span class="span--underlined">160 km/h</span>.
-      Nowadays people can get from Brussels to Luxembourg in 3h 15m which is almost <span class="span--underlined">30
-        min faster</span> then it was in 2006.</p>
-    <p class="text text--bodycopy">The introduction of M7 carriages in 2020 marked a significant milestone</p>
-    <div class="train_model_section">
-      <h2 class="text text--bulky">M7 carriages</h2>
-      <div class="train_model_animation">
-        <img class="train_model_train train-m7" src="./assets/m7-train/train-desktop.png" alt="">
-        <img class="train_model_note note-1-m7 note-m7" src="./assets/m7-train/1st-note.png" alt="">
-        <img class="train_model_note note-2-m7 note-m7" src="./assets/m7-train/2nd-note.png" alt="">
-      </div>
-    </div>
-    <p class="text text--bodycopy">The design of M7 was recognized at the prestigious Henry van de Velde Awards,
-      incorporates insights from a comprehensive traveler survey and prioritizes modern safety systems.</p>
-  </section>
-
-  <div class="cta__cont">
-    <p class="text--bulky">Do you know that before the design and mechanisms of trains were totally different?</p>
-    <p>Visit a train world to see the real size trains from ancient time!</p>
-    <div class="button__primary">
-      Go to museum
-    </div>
+    </footer>
   </div>
-  <footer>
-    <div class="footer">
-      <p> &#169; 2024 Devine</p>
-    </div>
-  </footer>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src=&#x22;https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js&#x22;></script>
+  <!-- <script src=&#x22;https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js&#x22;></script> -->
   <script type="module" src="/main.js"></script>
 </body>
 

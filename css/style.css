@@ -13,6 +13,10 @@ body {
   font-family: 'Archivo', sans-serif;
 }
 
+.site__wrapper{
+  overflow-x: hidden;
+}
+
 .text {
   margin-left: 16px;
   margin-bottom: 2rem;
@@ -93,6 +97,7 @@ body {
 }
 
 .button__primary {
+  cursor: pointer;
   border: none;
   background-color: var(--orange);
   color: white;
@@ -102,6 +107,7 @@ body {
 }
 
 .button__secondary {
+  cursor: pointer;
   background-color: var(--bg-color);
   border: var(--yellow) solid 3px;
   color: var(--black);
@@ -241,7 +247,7 @@ body {
 
 
 .channel-tunnel__img-line .channel-tunnel__img:nth-child(2) {
-  /* right: 22%; */
+  right: 22%;
 }
 
 .channel-tunnel__img-line .channel-tunnel__img:nth-child(4) {
@@ -281,6 +287,7 @@ body {
   margin: 2rem auto;
 }
 
+
 label {
   background-color: #ECB055;
   border-radius: 1rem;
@@ -319,6 +326,11 @@ input[type="radio"]:checked+span {
   font-size: 36px;
   color: var(--orange);
 }
+/* 
+  label.green {
+    background-color: green;
+    color: white;
+  } */
 
 .leuven__liege_cont {
   margin-top: 2rem;
@@ -693,6 +705,10 @@ input[type="radio"]:checked+span {
     max-width: 600px;
   } */
 
+
+  .text{
+    margin-left: 2rem;
+  }
   .text--bodycopy,
   .text--bodycopy_regular,
   .intro .text--bodycopy {
