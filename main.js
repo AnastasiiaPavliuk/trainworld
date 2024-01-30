@@ -5,9 +5,26 @@ const lottieMap = document.querySelector('#lottieMap');
 const formButton = document.querySelector('.form__button');
 const labels = document.querySelectorAll('.radio-container label');
 
+const icons = document.querySelectorAll('.icon');
+const planeIcon = document.querySelector('.icon__plane');
+const trainIcon = document.querySelector('.icon__train');
+const carIcon = document.querySelector('.icon__car');
+const durationResult = document.querySelector('.duration__result');
+const priceResult = document.querySelector('.price__result');
+
 console.log(lottieMap);
 
+const durations = {
+  plane: '1 h',
+  train: '1,5 h',
+  car: '4 h',
+};
 
+const prices = {
+  plane: '€ 180-210',
+  train: '€ 60-110',
+  car: '€ 35-55',
+};
 
 // lottieMap.addEventListener('click', () => {
 //     console.log('clicked');
@@ -25,7 +42,6 @@ console.log(lottieMap);
 // });
 
 const quizSubmit = () => {
-
   // console.log('submit');
   labels.forEach(label => {
     const radioInput = label.querySelector('input[type="radio"]');
@@ -41,7 +57,6 @@ const quizSubmit = () => {
       }
     }
   });
-
 }
 
 const rightLabel = (label) => {
@@ -58,11 +73,6 @@ const rightLabel = (label) => {
     duration: 0.2,
     ease: "out",
   });
-
-  // tl.to(label, {
-  //   backgroundColor: '#ECB055',
-  //   duration: 0.2,
-  // });
 
 }
 
@@ -85,10 +95,28 @@ const shakeLabel = (label) => {
 }
 
 
+const updateTravelInfo = (transport) => {
+  durationResult.textContent = durations[transport];
+  priceResult.textContent = prices[transport];
+}
+
+const changeState = (element) => {
+  icons.forEach(icon => icon.classList.remove('icon--active'));
+  element.classList.add('icon--active');
+  console.log(element);
+};
+
+const handleIconClick = (transport, element) => {
+  updateTravelInfo(transport);
+  changeState(element);
+};
 const init = () => {
 
+  planeIcon.addEventListener('click', (event) => handleIconClick('plane', planeIcon));
+  trainIcon.addEventListener('click', (event) => handleIconClick('train', trainIcon));
+  carIcon.addEventListener('click', (event) => handleIconClick('car', carIcon));
+  
   formButton.addEventListener('click', quizSubmit);
-
 
   gsap.to(".note-desiro", {
     scrollTrigger: {

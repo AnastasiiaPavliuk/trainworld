@@ -13,7 +13,7 @@ body {
   font-family: 'Archivo', sans-serif;
 }
 
-.site__wrapper{
+.site__wrapper {
   overflow-x: hidden;
 }
 
@@ -277,6 +277,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
+  margin-bottom: 10rem;
 }
 
 .radio-container {
@@ -287,6 +288,9 @@ body {
   margin: 2rem auto;
 }
 
+.leuven_flex_desktop {
+  margin-bottom: 10rem;
+}
 
 label {
   background-color: #ECB055;
@@ -314,9 +318,7 @@ input[type="radio"]:checked+span {
 }
 
 
-.radio-container label:hover,
-.radio-container label:active,
-.radio-container label:focus {
+.radio-container label:hover{
   background-color: rgb(243, 200, 106);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -326,6 +328,7 @@ input[type="radio"]:checked+span {
   font-size: 36px;
   color: var(--orange);
 }
+
 /* 
   label.green {
     background-color: green;
@@ -394,6 +397,7 @@ input[type="radio"]:checked+span {
   padding-bottom: 2rem;
   padding-left: 2rem;
   display: flex;
+  /* justify-content: center; */
   flex-direction: column;
   line-height: 150%;
 }
@@ -402,6 +406,23 @@ input[type="radio"]:checked+span {
   color: var(--orange);
   font-size: 24px;
   margin-bottom: 1.5rem;
+}
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  min-width: 300px;
+  margin: auto;
+}
+
+.destination__part {
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .destination__flex {
@@ -426,7 +447,11 @@ input[type="radio"]:checked+span {
 }
 
 .transport__part {
-  margin: 4rem 0;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .icon {
@@ -502,19 +527,28 @@ input[type="radio"]:checked+span {
 .results__cont {
   display: flex;
   /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: center;
+
   gap: 2rem;
 }
 
 .results {
-  background-color: #BDE2EB;
+  background-color: var(--yellow);
   display: flex;
   align-items: center;
   gap: 1rem;
   width: stretch;
   max-width: 150px;
-  padding: 0.5rem 1rem;
+  margin-top: 0.2rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 2rem;
 }
+
+.results__icon__caption {
+  margin-left: .7rem;
+}
+
 
 .cta__cont {
   display: flex;
@@ -527,9 +561,14 @@ input[type="radio"]:checked+span {
   text-align: center;
 }
 
-/* .check__results{
-  font-size: 1.5rem;
-} */
+.check__results {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.results img {
+  height: 1.3rem;
+}
 
 .satellite__bg {
   width: 100%;
@@ -586,8 +625,8 @@ input[type="radio"]:checked+span {
   /* margin: 1rem; */
   padding: 2rem 1rem;
   max-width: 400px;
-      width: 80%;
-        margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .sncb__img img {
@@ -701,14 +740,26 @@ input[type="radio"]:checked+span {
 
 
 @media (min-width:768px) {
+
   /* .intro .text--bodycopy{
     max-width: 600px;
   } */
+  .hard__to__believe {
+    max-width: 600px;
+    margin: auto;
+    border-radius: 1.5rem;
+  }
 
+  .hard__to__believe .text--bulky {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
 
-  .text{
+  .text {
     margin-left: 2rem;
   }
+
   .text--bodycopy,
   .text--bodycopy_regular,
   .intro .text--bodycopy {
@@ -722,7 +773,8 @@ input[type="radio"]:checked+span {
   .statistics__flex {
     /* display: flex; */
     flex-direction: row;
-    margin: 2rem;
+    margin: 2rem auto;
+    max-width: 85%;
     justify-content: space-between;
     /* flex-wrap: wrap; */
     align-content: stretch;
@@ -735,8 +787,13 @@ input[type="radio"]:checked+span {
 
   .timeline__grid {
     gap: 1.2rem 4rem;
-          
-            margin: 0;
+
+    margin: 0;
+  }
+
+  .sea__cont .text--bodycopy{
+    width: fit-content;
+    margin: auto;
   }
 
   .timeline {
@@ -750,6 +807,11 @@ input[type="radio"]:checked+span {
     height: 100%;
     display: block;
   }
+
+    .text_on_satellite_picture {
+      font-size: 2.5rem;
+      line-height: 150%;
+    }
 
   .line_img img {
     height: 100%;
@@ -777,10 +839,11 @@ input[type="radio"]:checked+span {
   .leuven_flex_desktop {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
+    max-width: 85%;
+    margin: auto;
+    margin-bottom: 10rem;
   }
 
   .leuven_flex_desktop lottie-player {
