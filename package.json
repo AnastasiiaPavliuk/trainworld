@@ -4,11 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --host",
+    "build": "vite build --base=/trainworld/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-interactivity": "^1.6.2"
   }
 }
